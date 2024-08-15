@@ -6,6 +6,9 @@ import './index.css';
 import Homepage from './Components/Homepage/Homepage';
 import Card1 from './Components/Cards/Card1';
 import Card2 from './Components/Cards/Card2';
+import Contact from './Components/ConactPage/Contact';
+import Courses from './Components/Cources/Courses';
+import About from './Components/About/About';
 
 // Define your routes
 const router = createBrowserRouter([
@@ -23,24 +26,15 @@ const router = createBrowserRouter([
       },
       {
         path: "about",
-        element: <Card1
-          img="/engineering.jpg"
-          title="engineering"
-          cn={500}
-          cources1="BE/B.Tech"
-          cources2="Diploma in engineering"
-          cources3="ME/M.tech"
-          borderColor="#cc6b56"
-        />,
+        element: <About />,
+      },
+      {
+        path: "cources",
+        element: <Courses />,
       },
       {
         path: "contact",
-        element: <Card2
-          title="Ranking"
-          tagline="Collage Ranked based on data"
-          bname="Top Ranked Collges in india"
-          img="https://cdni.iconscout.com/illustration/premium/thumb/website-ranking-3465545-2928735.png?f=webp"
-        />,
+        element: <Contact />,
       },
     ],
   },
