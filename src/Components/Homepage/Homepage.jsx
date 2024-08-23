@@ -1,6 +1,8 @@
 import React from 'react'
 import Card1 from '../Cards/Card1'
 import Card2 from '../Cards/Card2';
+import NotificationCard from '../Cards/NotificationCard';
+import Table from '../Cards/Table';
 
 const Homepage = () => {
     const courses = [
@@ -22,18 +24,34 @@ const Homepage = () => {
         <main className=''>
             {/* ------------------------------------------------------------Section-1------------------------------------ */}
 
-            <section className='min-h-[80vh] bg-white bg-cover bg-center w-full' style={{ backgroundImage: "url('')" }}>
+            <section className='min-h-[80vh] bg-white bg-cover bg-center w-full' style={{
+                backgroundImage: `url('your-image-url')`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                // backgroundImageXl: `url('your-image-url-xl')`,
+                backgroundSizeXl: 'cover'
+            }}>
                 <div className="w-full min-h-[85vh] flex justify-center items-center">
-                    <h1 className='source-serif-4 text-[25px] sm:text-[35px] lg:text-[45px] text-center w-[80%] lg:leading-relaxed'>Create and sell <span className='bg-[#3becb9] basic-regular px-3 rounded-lg'> the most learning products</span> while providing the best possible experience <span className='border-2 border-[#3becb9] rounded-xl px-3 py-1 basic-regular'>for your students.</span></h1>
+                    <h1 className='source-serif-4 text-[25px] sm:text-[35px] lg:text-[45px] text-center w-[80%] lg:leading-relaxed'>
+                        Elevate your learning
+                        <span className='bg-[#3becb9] basic-regular px-1 mx-1 rounded-lg'>
+                            journey with expertly selected courses
+                        </span>
+                        <br />
+                        <span className='border-2 border-[#3becb9] rounded-xl px-1 py-1 mx-1 basic-regular'>
+                            Discover your next passion
+                        </span>
+                        and unlock your potential.
+                    </h1>
                 </div>
             </section>
 
-            {/* ------------------------------------------------------------Section-2------------------------------------ */}
-
-            <section className='min-h-[80vh] bg-[#ffffff] grid place-content-center p-4'>
-                <div className="w-full grid place-content-start py-2">
+            {/*----------------------------------------------- Section-2 ( Select Study goal ) ------------------------------------- */}
+            <section className='min-h-[80vh] w-full bg-[#ffffff] p-4'>
+                <div className="w-[80%] m-auto mt-3">
                     <div className="text-start ml-3">
-                        <h2 className='basic-regular text-[25px] sm:text-[35px] lg:text-[45px]'>Select your study goal</h2>
+                        <h2 className='basic-regular text-[25px] sm:text-[35px] lg:text-[40px]'>Select your study goal</h2>
                         <p className='text-[10px] sm:text-[15px] lg:text-[20px]'>Share your knowledge through a complete suite of learning products</p>
                     </div>
                     <div className="p-2 flex flex-col gap-4">
@@ -84,23 +102,17 @@ const Homepage = () => {
                                 cources3="ME/M.tech"
                                 borderColor="[#ffaf8d]"
                             />
-                            {/* <Card1
-                                img="/engineering.jpg"
-                                title="design" cn={100}
-                                cources1="BE/B.Tech"
-                                cources2="Diploma in engineering"
-                                cources3="ME/M.tech"
-                                borderColor="[#cc6b56]"
-                            /> */}
                         </div>
                     </div>
+
                 </div>
             </section>
 
-            {/* ------------------------------------------------------------Section-3- ----------------------------------- */}
+            {/* ------------------------------------------------ Section-3 (Explore all programs )----------------------------------- */}
+
             <section className='min-h-[80vh] w-full bg-[#ffffff] p-4'>
                 <div className="w-[80%] m-auto mt-3">
-                    <h2 className='basic-regular text-[25px] sm:text-[35px] lg:text-[42px]'>Explore All Programs</h2>
+                    <h2 className='basic-regular text-[25px] sm:text-[35px] lg:text-[40px]'>Explore All Programs</h2>
                     <div className="flex flex-wrap gap-3 mt-3">
                         {courses.map((course, index) => (
                             <button
@@ -111,29 +123,107 @@ const Homepage = () => {
                             </button>
                         ))}
                     </div>
-                    <div className="flex flex-row gap-3">
-                        <Card2 
-                        title="Ranking"
-                        tagline="Collage Ranked based on data"
-                        bname="Top Ranked Collges in india"
-                        img="https://cdni.iconscout.com/illustration/premium/thumb/website-ranking-3465545-2928735.png?f=webp"
-                        />
-                        <Card2 
-                        title="Find colleges"
-                        tagline="Discover colleges via preference"
-                        bname="Top Ranked Collges in india"
-                        img="/colleges.png"
-                        />
-                        <Card2 
-                        title="Exams"
-                        tagline="Know more about exams all exams"
-                        bname="Check all enterance exams in india"
-                        img="/exams.png"
-                        />
+                    <div className="w-fit m-auto grid">
+                        <div className="flex flex-row gap-3">
+                            <Card2
+                                title="Ranking"
+                                tagline="Collage Ranked based on data"
+                                bname="Top Ranked Collges in india"
+                                img="https://cdni.iconscout.com/illustration/premium/thumb/website-ranking-3465545-2928735.png?f=webp"
+                            />
+                            <Card2
+                                title="Find colleges"
+                                tagline="Discover colleges via preference"
+                                bname="Top Ranked Collges in india"
+                                img="/colleges.png"
+                            />
+                            <Card2
+                                title="Find colleges"
+                                tagline="Discover colleges via preference"
+                                bname="Top Ranked Collges in india"
+                                img="/colleges.png"
+                            />
+                        </div>
+                        <div className="flex flex-row gap-3">
+                            <Card2
+                                title="Exams"
+                                tagline="Know more about exams all exams"
+                                bname="Check all enterance exams in india"
+                                img="/exams.png"
+                            />
+                            <Card2
+                                title="Course Finder"
+                                tagline="Discover top courses among india"
+                                bname="Get Top Courses in india"
+                                img="/courses.png"
+                            />
+                            <Card2
+                                title="Course Finder"
+                                tagline="Discover top courses among india"
+                                bname="Get Top Courses in india"
+                                img="/courses.png"
+                            />
+                        </div>
                     </div>
 
                 </div>
             </section>
+
+            {/* -------------------------------------------- SECTION - 4 ( Latest Notifiction)  -------------------------------------- */}
+
+
+            <section className='min-h-[80vh] w-full bg-[#ffffff] p-4'>
+                <div className="w-[80%] m-auto mt-3">
+                    <h2 className='basic-regular text-[25px] sm:text-[35px] lg:text-[40px]'>Latest Notifications</h2>
+                    <div className="flex flex-wrap justify-center">
+                        <NotificationCard
+                            title="Notification 1"
+                            data="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                        />
+                        <NotificationCard
+                            title="Notification 2"
+                            data="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                        />
+                        <NotificationCard
+                            title="Notification 3"
+                            data="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                        />
+                        <NotificationCard
+                            title="Notification 4"
+                            data="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                        />
+                        <NotificationCard
+                            title="Notification 5"
+                            data="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                        />
+                        <NotificationCard
+                            title="Notification 6"
+                            data="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                        />
+                    </div>
+                </div>
+            </section>
+
+
+            {/* ---------------------------------------- ----SECTION-5 (Top college Tables ) --------------------------------------- */}
+
+            <section className='min-h-[80vh] w-full bg-[#ffffff] p-4'>
+                <div className="w-[80%] m-auto mt-3">
+                    <h2 className='basic-regular text-[25px] sm:text-[35px] lg:text-[40px]'>Top 10 colleges</h2>
+                    <div className="flex flex-wrap gap-3 mt-3">
+                        {courses.map((course, index) => (
+                            <button
+                                key={index}
+                                className="bg-gray-100 text-gray-800 py-2 px-4 border border-gray-300 rounded-xl shadow-sm hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300 border-1 "
+                            >
+                                {course}
+                            </button>
+                        ))}
+                    </div>
+                    <Table />
+                </div>
+            </section>
+
         </main>
     )
 }

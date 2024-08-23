@@ -10,7 +10,7 @@ const Card2 = (props) => {
                         <p className='text-[15px]'>{props.tagline}</p>
                     </div>
 
-                    <div className="w-40">
+                    <div className="w-44">
                         <img src={props.img} alt="" />
                     </div>
                 </div>
