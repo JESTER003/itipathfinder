@@ -200,6 +200,14 @@ const Homepage = () => {
                             title="Notification 6"
                             data="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                         />
+                        <NotificationCard
+                            title="Notification 7"
+                            data="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                        />
+                        <NotificationCard
+                            title="Notification 8"
+                            data="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                        />
                     </div>
                 </div>
             </section>
