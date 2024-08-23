@@ -3,6 +3,7 @@ import Card1 from '../Cards/Card1'
 import Card2 from '../Cards/Card2';
 import NotificationCard from '../Cards/NotificationCard';
 import Table from '../Cards/Table';
+import CollegeCard from '../Cards/CollegeCard';
 
 const Homepage = () => {
     const courses = [
@@ -47,7 +48,68 @@ const Homepage = () => {
                 </div>
             </section>
 
+            {/* ------------------------------------------------ Section-3 (Explore all programs )----------------------------------- */}
+
+            <section className='min-h-[80vh] w-full bg-[#ffffff] p-4 mt-5'>
+                <div className="w-[80%] m-auto mt-3">
+                    <h2 className='basic-regular text-[25px] sm:text-[35px] lg:text-[40px]'>Explore All Programs</h2>
+                    <div className="flex flex-wrap gap-3 mt-3">
+                        {courses.map((course, index) => (
+                            <button
+                                key={index}
+                                className="bg-gray-100 text-gray-800 py-2 px-4 border border-gray-300 rounded-xl shadow-sm hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300 border-1 "
+                            >
+                                {course}
+                            </button>
+                        ))}
+                    </div>
+                    <div className="w-fit m-auto grid">
+                        <div className="flex flex-row gap-3">
+                            <Card2
+                                title="Ranking"
+                                tagline="Collage Ranked based on data"
+                                bname="Top Ranked Collges in india"
+                                img="https://cdni.iconscout.com/illustration/premium/thumb/website-ranking-3465545-2928735.png?f=webp"
+                            />
+                            <Card2
+                                title="Find colleges"
+                                tagline="Discover colleges via preference"
+                                bname="Top Ranked Collges in india"
+                                img="/colleges.png"
+                            />
+                            <Card2
+                                title="Find colleges"
+                                tagline="Discover colleges via preference"
+                                bname="Top Ranked Collges in india"
+                                img="/colleges.png"
+                            />
+                        </div>
+                        <div className="flex flex-row gap-3">
+                            <Card2
+                                title="Exams"
+                                tagline="Know more about exams all exams"
+                                bname="Check all enterance exams in india"
+                                img="/exams.png"
+                            />
+                            <Card2
+                                title="Course Finder"
+                                tagline="Discover top courses among india"
+                                bname="Get Top Courses in india"
+                                img="/courses.png"
+                            />
+                            <Card2
+                                title="Course Finder"
+                                tagline="Discover top courses among india"
+                                bname="Get Top Courses in india"
+                                img="/courses.png"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/*----------------------------------------------- Section-2 ( Select Study goal ) ------------------------------------- */}
+
             <section className='min-h-[80vh] w-full bg-[#ffffff] p-4'>
                 <div className="w-[80%] m-auto mt-3">
                     <div className="text-start ml-3">
@@ -108,71 +170,9 @@ const Homepage = () => {
                 </div>
             </section>
 
-            {/* ------------------------------------------------ Section-3 (Explore all programs )----------------------------------- */}
-
-            <section className='min-h-[80vh] w-full bg-[#ffffff] p-4'>
-                <div className="w-[80%] m-auto mt-3">
-                    <h2 className='basic-regular text-[25px] sm:text-[35px] lg:text-[40px]'>Explore All Programs</h2>
-                    <div className="flex flex-wrap gap-3 mt-3">
-                        {courses.map((course, index) => (
-                            <button
-                                key={index}
-                                className="bg-gray-100 text-gray-800 py-2 px-4 border border-gray-300 rounded-xl shadow-sm hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300 border-1 "
-                            >
-                                {course}
-                            </button>
-                        ))}
-                    </div>
-                    <div className="w-fit m-auto grid">
-                        <div className="flex flex-row gap-3">
-                            <Card2
-                                title="Ranking"
-                                tagline="Collage Ranked based on data"
-                                bname="Top Ranked Collges in india"
-                                img="https://cdni.iconscout.com/illustration/premium/thumb/website-ranking-3465545-2928735.png?f=webp"
-                            />
-                            <Card2
-                                title="Find colleges"
-                                tagline="Discover colleges via preference"
-                                bname="Top Ranked Collges in india"
-                                img="/colleges.png"
-                            />
-                            <Card2
-                                title="Find colleges"
-                                tagline="Discover colleges via preference"
-                                bname="Top Ranked Collges in india"
-                                img="/colleges.png"
-                            />
-                        </div>
-                        <div className="flex flex-row gap-3">
-                            <Card2
-                                title="Exams"
-                                tagline="Know more about exams all exams"
-                                bname="Check all enterance exams in india"
-                                img="/exams.png"
-                            />
-                            <Card2
-                                title="Course Finder"
-                                tagline="Discover top courses among india"
-                                bname="Get Top Courses in india"
-                                img="/courses.png"
-                            />
-                            <Card2
-                                title="Course Finder"
-                                tagline="Discover top courses among india"
-                                bname="Get Top Courses in india"
-                                img="/courses.png"
-                            />
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
             {/* -------------------------------------------- SECTION - 4 ( Latest Notifiction)  -------------------------------------- */}
 
-
-            <section className='min-h-[80vh] w-full bg-[#ffffff] p-4'>
+            <section className='min-h-[50vh] w-full bg-[#ffffff] p-4 mt-5'>
                 <div className="w-[80%] m-auto mt-3">
                     <h2 className='basic-regular text-[25px] sm:text-[35px] lg:text-[40px]'>Latest Notifications</h2>
                     <div className="flex flex-wrap justify-center">
@@ -204,10 +204,9 @@ const Homepage = () => {
                 </div>
             </section>
 
-
             {/* ---------------------------------------- ----SECTION-5 (Top college Tables ) --------------------------------------- */}
 
-            <section className='min-h-[80vh] w-full bg-[#ffffff] p-4'>
+            <section className='min-h-[80vh] w-full bg-[#ffffff] p-4 mt-5'>
                 <div className="w-[80%] m-auto mt-3">
                     <h2 className='basic-regular text-[25px] sm:text-[35px] lg:text-[40px]'>Top 10 colleges</h2>
                     <div className="flex flex-wrap gap-3 mt-3">
@@ -224,6 +223,18 @@ const Homepage = () => {
                 </div>
             </section>
 
+            {/* ---------------------------------------- ----SECTION-5 (Top college Tables ) --------------------------------------- */}
+
+            <section className='min-h-[80vh] w-full bg-[#ffffff] p-4 mt-5'>
+                <div className="w-[80%] m-auto mt-">
+                    <h2 className='basic-regular text-[25px] sm:text-[35px] lg:text-[40px]'>Top colleges/Universities</h2>
+                    <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-4 md:gap-6 lg:gap-96">
+                        <CollegeCard />
+                        <CollegeCard />
+                        <CollegeCard />
+                    </div>
+                </div>
+            </section>
         </main>
     )
 }
