@@ -9,6 +9,8 @@ import Card2 from './Components/Cards/Card2';
 import Contact from './Components/ConactPage/Contact';
 import Courses from './Components/Cources/Courses';
 import About from './Components/About/About';
+import Login from './Components/Login';
+import Signup from './Components/Signup';
 
 // Define your routes
 const router = createBrowserRouter([
@@ -18,7 +20,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Homepage />,
+        element: <Login />,
+      },
+      {
+        path: "signup",
+        element: <Signup />,
       },
       {
         path: "home",

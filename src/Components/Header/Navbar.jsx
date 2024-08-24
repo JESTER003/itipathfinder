@@ -18,6 +18,8 @@ const Navbar = () => {
                     <div className="flex gap-3 justify-end items-center w-[33%] ">
                         <li className='text-center text-grey-600 bg-[#3becb9] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 dark:bg-[#3becb9] dark:hover:bg-green-400 focus:outline-none dark:focus:ring-blue-800'><a href="">Get Started</a></li>
                         <li className='text-center text-grey-600 bg-white hover:bg-[whitesmoke] focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2  dark:bg-white dark:hover:bg-[whitesmoke] focus:outline-none dark:focus:ring-blue-800 border border-[#3becb9]'><a href="">Sign in</a></li>
+                        <Link to="/">   <li className='text-center text-grey-600 bg-[#3becb9] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 dark:bg-[#3becb9] dark:hover:bg-green-400 focus:outline-none dark:focus:ring-blue-800'><a href="">Sign Out</a></li></Link>
+
                     </div>
                 </ul>
             </nav>
