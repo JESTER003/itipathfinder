@@ -11,6 +11,9 @@ import Courses from './Components/Cources/Courses';
 import About from './Components/About/About';
 import Login from './Components/Login';
 import Signup from './Components/Signup';
+import QS1 from './Components/Questions/QS1';
+import QS2 from './Components/Questions/QS2';
+import QS3 from './Components/Questions/QS3';
 
 // Define your routes
 const router = createBrowserRouter([
@@ -27,20 +30,32 @@ const router = createBrowserRouter([
         element: <Signup />,
       },
       {
-        path: "home",
+        path: "/home",
         element: <Homepage />,
       },
       {
-        path: "about",
+        path: "/about",
         element: <About />,
       },
       {
-        path: "cources",
+        path: "/cources",
         element: <Courses />,
       },
       {
-        path: "contact",
+        path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/qone",
+        element: <QS1/>,
+      },
+      {
+        path: "/qtwo",
+        element: <QS2/>,
+      },
+      {
+        path: "/qthree",
+        element: <QS3/>,
       },
     ],
   },

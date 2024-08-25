@@ -4,6 +4,7 @@ import Card2 from '../Cards/Card2';
 import NotificationCard from '../Cards/NotificationCard';
 import Table from '../Cards/Table';
 import CollegeCard from '../Cards/CollegeCard';
+import { useLocation } from 'react-router-dom';
 
 const Homepage = () => {
     const courses = [
@@ -21,10 +22,13 @@ const Homepage = () => {
         "B.sc(Nursing)"
     ];
 
+    const location = useLocation();
+    const {name}=location.state || {}
+    
     return (
         <main className=''>
             {/* ------------------------------------------------------------Section-1------------------------------------ */}
-
+            <p className='text-center'>Hello {name}</p>
             <section className='min-h-[80vh] bg-white bg-cover bg-center w-full' style={{
                 backgroundImage: `url('your-image-url')`,
                 backgroundSize: 'cover',
