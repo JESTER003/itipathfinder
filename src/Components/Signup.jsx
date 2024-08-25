@@ -38,7 +38,7 @@ function Signup() {
   }
 
   return (
-    <div className="flex flex-col lg:flex-row h-screen bg-gray-100 p-8">
+    <div className="flex flex-col-reverse lg:flex-row h-screen bg-gray-100 p-8">
       {/* 3D Image Section */}
 
       {/* Signup Form Section */}
@@ -91,7 +91,7 @@ function Signup() {
         <div className="absolute inset-0">
           {/* Replace with your 3D image link */}
           <img
-            src="https://img.pikbest.com/origin/09/29/25/06EpIkbEsT6Nb.png!w700wp"
+            src="https://3dbay.io/files/preview/1280x854/11631291445u9coqwepeefgswwqm3dfba0pds9aytfitduxblwlffpccr6tkvuxrchail2dyxlrc3dla89ngqntz5bcypnxrzchg62e1wpa8c0o.png"
             alt="3D Graphic"
             className="object-cover w-full h-full"
           />
