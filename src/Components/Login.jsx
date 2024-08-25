@@ -37,54 +37,67 @@ function Login() {
     }
 
     return (
-        <div className="flex justify-center h-screen bg-gray-100 min-h-[100vh] items-center flex-col">
-            <h1 className="text-2xl font-bold mb-5">
-                Welcome to ITIpathfinder. Find a path that gives you a better career.
-            </h1>
-            <div className="max-w-md p-4 bg-white rounded-xl shadow-md md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 mx-auto h-[50vh] grid place-content-center">
-                <h1 className="text-3xl font-bold mb-4 text-center">Login</h1>
-                <form onSubmit={submit}>
-                    <div className="mb-4">
-                        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-                            Email
-                        </label>
-                        <input
-                            type="email"
-                            onChange={(e) => setEmail(e.target.value)}
-                            placeholder="Email"
-                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            required
-                        />
-                    </div>
-                    <div className="mb-4">
-                        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
-                            Password
-                        </label>
-                        <input
-                            type="password"
-                            onChange={(e) => setPassword(e.target.value)}
-                            placeholder="Password"
-                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            required
-                        />
-                    </div>
-                    <div className="flex items-center justify-center">
+        <div className="flex flex-col lg:flex-row h-screen bg-gray-100 p-8 ">
+            {/* 3D Image Section */}
+            <div className="w-full lg:w-1/2 flex items-center justify-center bg-gray-400 relative rounded-2xl">
+                <div className="absolute inset-0">
+                    {/* Replace with your 3D image link */}
+                    <img
+                        src="https://r2.erweima.ai/imgcompressed/img/compressed_d6cbf2acc68781b9296e583eddb0a2da.webp"
+                        alt="3D Graphic"
+                        className="object-cover w-full h-full"
+                    />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent to-gray-800 opacity-50"></div>
+                <div className="relative z-10 p-8 text-center text-white">
+                    <h1 className="text-4xl font-bold mb-4">Welcome to ITIpathfinder</h1>
+                    <p className="text-lg mb-8">Discover a path to a better career with our expert guidance.</p>
+                </div>
+            </div>
+
+            {/* Login Form Section */}
+            <div className="w-full lg:w-1/2 flex items-center justify-center bg-white border rounded-2xl">
+                <div className="w-full max-w-md mx-auto bg-white rounded-lg p-4 border">
+                    <h2 className="text-3xl font-bold mb-6 text-center">Login</h2>
+                    <form onSubmit={submit}>
+                        <div className="mb-4">
+                            <label className="block text-gray-700 text-sm font-semibold mb-2" htmlFor="email">
+                                Email
+                            </label>
+                            <input
+                                type="email"
+                                onChange={(e) => setEmail(e.target.value)}
+                                placeholder="Enter your email"
+                                className="w-full py-2 px-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                required
+                            />
+                        </div>
+                        <div className="mb-4">
+                            <label className="block text-gray-700 text-sm font-semibold mb-2" htmlFor="password">
+                                Password
+                            </label>
+                            <input
+                                type="password"
+                                onChange={(e) => setPassword(e.target.value)}
+                                placeholder="Enter your password"
+                                className="w-full py-2 px-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                required
+                            />
+                        </div>
                         <button
                             type="submit"
-                            className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded"
+                            className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg"
                         >
                             Login
                         </button>
-                    </div>
-                </form>
-
-                <br />
-                <p className="text-gray-600 text-sm text-center">OR</p>
-                <br />
-
-                <Link to="/signup" className="text-blue-500 hover:text-blue-800 text-center">
-                    Signup Page
-                </Link>
+                        <p className="mt-4 text-center text-gray-600">
+                            OR
+                        </p>
+                        <Link to="/signup" className="block text-center text-blue-500 hover:text-blue-700 mt-4">
+                            Signup Page
+                        </Link>
+                    </form>
+                </div>
             </div>
         </div>
     );

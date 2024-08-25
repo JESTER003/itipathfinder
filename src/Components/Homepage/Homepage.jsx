@@ -23,12 +23,12 @@ const Homepage = () => {
     ];
 
     const location = useLocation();
-    const {name}=location.state || {}
-    
+    // const { name } = location.state || {}
+
     return (
         <main className=''>
             {/* ------------------------------------------------------------Section-1------------------------------------ */}
-            <p className='text-center'>Hello {name}</p>
+            {/* <p className='text-center'>Hello</p> */}
             <section className='min-h-[80vh] bg-white bg-cover bg-center w-full' style={{
                 backgroundImage: `url('your-image-url')`,
                 backgroundSize: 'cover',
