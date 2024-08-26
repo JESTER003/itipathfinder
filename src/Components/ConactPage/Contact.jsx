@@ -27,12 +27,12 @@ const Contact = () => {
     };
 
     return (
-        <div className=" text-gray-800 p-10 ">
+        <div className=" text-gray-800 p-4 lg:p-10 min-h-fit">
             {/* Hero Section */}
-            <section className="bg-[#3becb0] text-white py-16 rounded-tr-2xl rounded-tl-2xl">
-                <div className="container mx-auto px-6 lg:px-8">
+            <section className="bg-[#3becb0] text-white py-4 rounded-tr-2xl rounded-tl-2xl">
+                <div className="container mx-auto px-2 lg:px-2 md:px-2">
                     <div className="text-center">
-                        <h1 className="text-4xl lg:text-5xl font-bold mb-4">Contact Us</h1>
+                        <h1 className="text-2xl lg:text-4xl font-bold mb-2">Contact Us</h1>
                         <p className="text-lg lg:text-xl">
                             We’d love to hear from you! Whether you have questions or feedback, feel free to reach out to us.
                         </p>
@@ -41,12 +41,12 @@ const Contact = () => {
             </section>
 
             {/* Contact Form Section */}
-            <section className="py-10 bg-[#3becb0] rounded-bl-2xl rounded-br-2xl">
-                <div className="container mx-auto px-6 lg:px-8">
+            <section className=" bg-[#3becb0] rounded-bl-2xl rounded-br-2xl pb-4">
+                <div className="container mx-auto px-4 lg:px-8">
                     <div className="flex flex-col lg:flex-row">
-                        <div className="w-full lg:w-1/2 lg:pr-8">
-                            <h2 className="text-3xl font-semibold mb-6">Send Us a Message</h2>
-                            <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-lg">
+                        <div className="w-full lg:w-1/2 lg:pr-6">
+                            <h2 className="text-3xl font-semibold mb-2">Send Us a Message</h2>
+                            <form onSubmit={handleSubmit} className="bg-white p-4 rounded-lg shadow-lg">
                                 <div className="mb-4">
                                     <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
                                         Name
@@ -98,7 +98,7 @@ const Contact = () => {
                             </form>
                         </div>
                         <div className="w-full lg:w-1/2 lg:pl-8 mt-8 lg:mt-0">
-                            <h2 className="text-3xl font-semibold mb-6">Our Contact Information</h2>
+                            <h2 className="text-3xl font-semibold mb-2">Our Contact Information</h2>
                             <div className="mb-4">
                                 <h3 className="text-xl font-semibold mb-2">Email Us</h3>
                                 <p className="text-gray-700">info@itipathfinder.com</p>
