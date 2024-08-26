@@ -8,7 +8,7 @@ const QS3 = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (city.trim() !== "") {
-      navigate("/home");
+      navigate("/");
     }
     else {
       alert("Input the city first.")
