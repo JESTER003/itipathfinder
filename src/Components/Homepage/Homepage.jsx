@@ -8,19 +8,18 @@ import { useLocation } from 'react-router-dom';
 
 const Homepage = () => {
     const courses = [
-        "BE/B.Tech",
-        "ME/M.Tech",
-        "MBA",
-        "BBA",
-        "B.Sc",
-        "M.Sc",
-        "B.Com",
-        "M.Com",
-        "BCA",
-        "MCA",
-        "MBBS",
-        "B.sc(Nursing)"
+        "Electrician",
+        "Fitter",
+        "Welder",
+        "Plumber",
+        "Machinist",
+        "Mechanic (Motor Vehicle)",
+        "Draughtsman (Civil)",
+        "Computer Operator and Programming Assistant (COPA)",
+        "Refrigeration and Air Conditioning Mechanic",
+        "Tool and Die Maker"
     ];
+
 
     const location = useLocation();
     // const { name } = location.state || {}
@@ -38,37 +37,41 @@ const Homepage = () => {
                 backgroundSizeXl: 'cover'
             }}>
                 <div className="w-full min-h-[85vh] flex justify-center items-center">
-                    <h1 className='source-serif-4 text-[25px] sm:text-[35px] lg:text-[45px] text-center w-[80%] lg:leading-relaxed'>
-                        Elevate your learning
-                        <span className='bg-[#3becb9] basic-regular px-1 mx-1 rounded-lg'>
-                            journey with expertly selected courses
+                    <h1 className='source-serif-4 text-[24px] sm:text-[32px] lg:text-[40px] xl:text-[48px] text-center w-[90%] lg:w-[80%] mx-auto lg:leading-relaxed'>
+                        Kickstart your career
+                        <span className='bg-[#3becb9] basic-regular px-2 mx-1 rounded-lg inline-block leading-[27px] lg:leading-[60px] '>
+                            with industry-focused ITI courses
                         </span>
                         <br />
-                        <span className='border-2 border-[#3becb9] rounded-xl px-1 py-1 mx-1 basic-regular'>
-                            Discover your next passion
+                        <span className='border-2 border-[#3becb9] rounded-xl px-2 mx-2 basic-regular leading-[27px] inline-block lg:leading-[60px]'>
+                            Discover the path to your future
                         </span>
-                        and unlock your potential.
+                        and build a successful trade career.
                     </h1>
+
+
                 </div>
             </section>
 
             {/* ------------------------------------------------ Section-3 (Explore all programs )----------------------------------- */}
 
-            <section className='min-h-[80vh] w-full bg-[#ffffff] p-4 mt-5'>
-                <div className="w-[80%] m-auto mt-3">
-                    <h2 className='basic-regular text-[25px] sm:text-[35px] lg:text-[40px]'>Explore All Programs</h2>
+            <section className="min-h-[80vh] w-full bg-[#ffffff] px-6 py-6 mt-5">
+                <div className="w-full lg:w-[80%] mx-auto mt-3">
+                    <h2 className="basic-regular text-[25px] sm:text-[35px] lg:text-[40px]">
+                        Explore All Programs
+                    </h2>
                     <div className="flex flex-wrap gap-3 mt-3">
                         {courses.map((course, index) => (
                             <button
                                 key={index}
-                                className="bg-gray-100 text-gray-800 py-2 px-4 border border-gray-300 rounded-xl shadow-sm hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300 border-1 "
+                                className="bg-gray-100 text-gray-800 py-2 px-4 border border-gray-300 rounded-xl shadow-sm hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300"
                             >
                                 {course}
                             </button>
                         ))}
                     </div>
-                    <div className="w-fit m-auto grid">
-                        <div className="flex flex-row gap-3">
+                    <div className="w-full sm:px-6 lg:px-8 gap-4 mx-auto  flex justify-center flex-wrap">
+                        <div className="flex flex-col sm:flex-row lg:gap-4 ">
                             <Card2
                                 title="Ranking"
                                 tagline="Collage Ranked based on data"
@@ -88,7 +91,7 @@ const Homepage = () => {
                                 img="/colleges.png"
                             />
                         </div>
-                        <div className="flex flex-row gap-3">
+                        <div className="flex flex-col sm:flex-row gap-4">
                             <Card2
                                 title="Exams"
                                 tagline="Know more about exams all exams"
@@ -109,16 +112,21 @@ const Homepage = () => {
                             />
                         </div>
                     </div>
+
                 </div>
             </section>
 
             {/*----------------------------------------------- Section-2 ( Select Study goal ) ------------------------------------- */}
 
             <section className='min-h-[80vh] w-full bg-[#ffffff] p-4'>
-                <div className="w-[80%] m-auto mt-3">
+                <div className="w-[90%] lg:w-[80%] m-auto mt-3">
                     <div className="text-start ml-3">
-                        <h2 className='basic-regular text-[25px] sm:text-[35px] lg:text-[40px]'>Select your study goal</h2>
-                        <p className='text-[10px] sm:text-[15px] lg:text-[20px]'>Share your knowledge through a complete suite of learning products</p>
+                        <h2 className='basic-regular text-[25px] sm:text-[35px] lg:text-[40px]'>
+                            Select your study goal
+                        </h2>
+                        <p className='text-[12px] sm:text-[15px] lg:text-[20px]'>
+                            Share your knowledge through a complete suite of learning products
+                        </p>
                     </div>
                     <div className="p-2 flex flex-col gap-4">
                         <div className="flex flex-wrap justify-center items-center gap-4">
@@ -149,7 +157,7 @@ const Homepage = () => {
                                 borderColor="[#1b4942]"
                             />
                         </div>
-                        <div className="flex justify-center gap-4">
+                        <div className="flex flex-wrap justify-center items-center gap-4">
 
                             <Card1
                                 img="/engineering.jpg"
@@ -204,14 +212,6 @@ const Homepage = () => {
                             title="Notification 6"
                             data="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                         />
-                        <NotificationCard
-                            title="Notification 7"
-                            data="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                        />
-                        <NotificationCard
-                            title="Notification 8"
-                            data="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                        />
                     </div>
                 </div>
             </section>
@@ -237,16 +237,17 @@ const Homepage = () => {
 
             {/* ---------------------------------------- ----SECTION-5 (Top college Tables ) --------------------------------------- */}
 
-            <section className='min-h-[80vh] w-full bg-[#ffffff] p-4 mt-5'>
-                <div className="w-[80%] m-auto mt-">
-                    <h2 className='basic-regular text-[25px] sm:text-[35px] lg:text-[40px]'>Top colleges/Universities</h2>
-                    <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-4 md:gap-6 lg:gap-96">
+            <section className="min-h-[80vh] w-full bg-[#ffffff] p-4 mt-5">
+                <div className="w-[90%] md:w-[80%] m-auto mt-5">
+                    <h2 className="basic-regular text-[25px] sm:text-[35px] lg:text-[40px]">Top Colleges/Universities</h2>
+                    <div className="flex  gap-4 flex-wrap">
                         <CollegeCard />
                         <CollegeCard />
                         <CollegeCard />
                     </div>
                 </div>
             </section>
+
         </main>
     )
 }
