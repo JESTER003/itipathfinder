@@ -20,11 +20,11 @@ const CollegeCard = () => {
                         alt="College Logo"
                         className="w-10 h-10 rounded-full mr-2"
                     />
-                    <h3 className="font-bold text-lg">IIT Madras - Indian Institute of Technology - [IITM]</h3>
+                    <h3 className="font-bold text-lg">ITI  - Industrial training institute </h3>
                 </div>
-                <p className="text-gray-700 mb-2">Chennai, Tamil Nadu | AICTE</p>
+                <p className="text-gray-700 mb-2">India</p>
                 <div className="flex justify-between items-center mb-2">
-                    <h4 className="font-bold text-lg">BE/B.Tech</h4>
+                    <h4 className="font-bold text-lg">ITI</h4>
                     <div className="flex items-center">
                         <span className="font-bold text-yellow-500">4.2/5</span>
                         <svg
