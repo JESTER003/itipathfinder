@@ -21,16 +21,16 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     children: [
+      // {
+      //   path: "/",
+      //   element: <Login />,
+      // },
+      // {
+      //   path: "signup",
+      //   element: <Signup />,
+      // },
       {
         path: "/",
-        element: <Login />,
-      },
-      {
-        path: "signup",
-        element: <Signup />,
-      },
-      {
-        path: "/home",
         element: <Homepage />,
       },
       {

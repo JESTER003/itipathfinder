@@ -11,7 +11,7 @@ const Navbar = () => {
                         <img src="" alt="" /><a href="" className='text-2xl ml-4'>ITIpathfinder.com</a>
                     </div>
                     <div className="flex gap-4 font-source-serif-4 items-center w-[33%] justify-center ">
-                        <li><Link to="/home">Home</Link></li>
+                        <li><Link to="/">Home</Link></li>
                         <li><Link to="/about">About</Link></li>
                         <li><Link to="/cources">Course</Link></li>
                         <li><Link to="/contact">Contat</Link></li>
