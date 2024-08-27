@@ -9,8 +9,8 @@ const Navbar = () => {
                 <div className="max-w-7xl mx-auto">
                     <div className="flex items-center justify-between flex-wrap">
                         <div className="flex items-center flex-shrink-0 mr-6">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmnNK4JXhV3ClRMsXvIQWP5nr2mO16jS-s5g&s" alt="" className="h-8 w-auto sm:h-10" />
-                            <a href="" className="text-2xl ml-2 font-semibold">ITIpathfinder.com</a>
+                            <img src="/logo2.png" alt="" className="h-8 w-auto sm:h-10" />
+                            <a href="" className="text-2xl ml-2 font-semibold source-serif-4">ITIpathfinder.com</a>
                         </div>
                         <div className="block lg:hidden">
                             <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="flex items-center px-3 py-2 border rounded text-gray-800 border-gray-400 hover:text-black hover:border-black">

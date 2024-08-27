@@ -28,14 +28,16 @@ const Homepage = () => {
         <main className=''>
             {/* ------------------------------------------------------------Section-1------------------------------------ */}
             {/* <p className='text-center'>Hello</p> */}
-            <section className='min-h-[80vh] bg-white bg-cover bg-center w-full' style={{
-                backgroundImage: `url('your-image-url')`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-                // backgroundImageXl: `url('your-image-url-xl')`,
-                backgroundSizeXl: 'cover'
+            <section className="min-h-[80vh] bg-cover bg-center w-full" style={{
+                backgroundImage: `url('/bg.jpg')`,
             }}>
+                <div className="absolute w-full overflow-hidden ">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M3000 120L0 16.48 0 0 1200 0 1200 120z" fill='#3becb9'></path>
+                    </svg>
+
+                </div>
+
                 <div className="w-full min-h-[85vh] flex justify-center items-center">
                     <h1 className='source-serif-4 text-[24px] sm:text-[32px] lg:text-[40px] xl:text-[48px] text-center w-[90%] lg:w-[80%] mx-auto lg:leading-relaxed'>
                         Kickstart your career
@@ -48,15 +50,19 @@ const Homepage = () => {
                         </span>
                         and build a successful trade career.
                     </h1>
+                </div>
 
-
+                <div className="absolute w-full bottom-0 rotate-180">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M3000 120L0 16.48 0 0 1200 0 1200 120z" fill='#3becb9'></path>
+                    </svg>
                 </div>
             </section>
 
-            {/* ------------------------------------------------ Section-3 (Explore all programs )----------------------------------- */}
+            {/* ------------------------------------------------ Section-2 (Explore all programs )----------------------------------- */}
 
-            <section className="min-h-[80vh] w-full bg-[#ffffff] px-6 py-6 mt-5">
-                <div className="w-full lg:w-[80%] mx-auto mt-3">
+            <section className="min-h-[80vh] w-full bg-[#ffffff] py-6 mt-0">
+                <div className="w-full lg:w-[80%] mx-auto mt-14">
                     <h2 className="basic-regular text-[25px] sm:text-[35px] lg:text-[40px]">
                         Explore All Programs
                     </h2>
@@ -112,13 +118,15 @@ const Homepage = () => {
                             />
                         </div>
                     </div>
-
                 </div>
+
+                
             </section>
 
-            {/*----------------------------------------------- Section-2 ( Select Study goal ) ------------------------------------- */}
+            {/*----------------------------------------------- Section-3 ( Select Study goal ) ------------------------------------- */}
 
             <section className='min-h-[80vh] w-full bg-[#ffffff] p-4'>
+           
                 <div className="w-[90%] lg:w-[80%] m-auto mt-3">
                     <div className="text-start ml-3">
                         <h2 className='basic-regular text-[25px] sm:text-[35px] lg:text-[40px]'>
