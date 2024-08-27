@@ -4,7 +4,7 @@ import Card2 from '../Cards/Card2';
 import NotificationCard from '../Cards/NotificationCard';
 import Table from '../Cards/Table';
 import CollegeCard from '../Cards/CollegeCard';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Homepage = () => {
     const courses = [
@@ -39,7 +39,7 @@ const Homepage = () => {
                 </div>
 
                 <div className="w-full min-h-[85vh] flex justify-center items-center">
-                    <h1 className='source-serif-4 text-[24px] sm:text-[32px] lg:text-[40px] xl:text-[48px] text-center w-[90%] lg:w-[80%] mx-auto lg:leading-relaxed'>
+                    <h1 className='source-serif-4 text-[24px] sm:text-[32px] lg:text-[40px] xl:text-[48px] text-center w-[90%] lg:w-[80%] mx-auto lg:leading-[65px]'>
                         Kickstart your career
                         <span className='bg-[#3becb9] basic-regular px-2 mx-1 rounded-lg inline-block leading-[27px] lg:leading-[60px] '>
                             with industry-focused ITI courses
@@ -48,7 +48,8 @@ const Homepage = () => {
                         <span className='border-2 border-[#3becb9] rounded-xl px-2 mx-2 basic-regular leading-[27px] inline-block lg:leading-[60px]'>
                             Discover the path to your future
                         </span>
-                        and build a successful trade career.
+                        and build a successful trade career.<br/>
+                        <Link to="/qone" className="inline-block text-lg md:text-xl lg:text-2xl px-4 py-2 leading-none rounded-full border-2 border-[#3becb9] text-gray-800 font-medium hover:bg-[#3becb9] hover:text-white transition duration-300 shadow-md hover:shadow-lg ">Get started</Link>
                     </h1>
                 </div>
 
@@ -76,6 +77,7 @@ const Homepage = () => {
                             </button>
                         ))}
                     </div>
+
                     <div className="w-full sm:px-6 lg:px-8 gap-4 mx-auto  flex justify-center flex-wrap">
                         <div className="flex flex-col sm:flex-row lg:gap-4 ">
                             <Card2
@@ -120,13 +122,13 @@ const Homepage = () => {
                     </div>
                 </div>
 
-                
+
             </section>
 
             {/*----------------------------------------------- Section-3 ( Select Study goal ) ------------------------------------- */}
 
             <section className='min-h-[80vh] w-full bg-[#ffffff] p-4'>
-           
+
                 <div className="w-[90%] lg:w-[80%] m-auto mt-3">
                     <div className="text-start ml-3">
                         <h2 className='basic-regular text-[25px] sm:text-[35px] lg:text-[40px]'>
