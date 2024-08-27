@@ -2,14 +2,14 @@ import React from 'react'
 
 const About = () => {
     return (
-        <div className="bg-gray-100 text-gray-800 p-10">
+        <div className="bg-gray-100 text-gray-800 p-6 lg:p-10">
             {/* Hero Section */}
             <section className="bg-green-300 text-gray-700 py-8 rounded-tl-2xl rounded-tr-2xl">
                 <div className="container mx-auto px-6 lg:px-8 ">
                     <div className="flex flex-col lg:flex-row items-center justify-center">
                         <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
                             <h1 className="text-4xl lg:text-5xl font-bold mb-4">About Us</h1>
-                            <p className="text-lg lg:text-xl">
+                            <p className="text-[17px] lg:text-xl">
                                 At ITIPathfinder, we are committed to guiding students through their post-10th grade journey by offering expert advice on ITI courses. Our goal is to simplify the decision-making process and connect students with career paths that align with their interests and strengths. With a focus on providing accurate and personalized recommendations, we strive to be the go-to resource for aspiring professionals seeking the right educational opportunities.
                             </p>
                         </div>

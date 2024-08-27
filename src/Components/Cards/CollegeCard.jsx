@@ -9,14 +9,14 @@ const CollegeCard = () => {
                     alt="College Image"
                     className="w-full h-48 object-cover"
                 />
-                <div className="absolute top-4 right-4 bg-blue-500 text-white rounded-full px-2 py-1">
+                <div className="absolute top-4 right-4 bg-green-500 text-white rounded-full px-2 py-1">
                     <span className="font-bold">10/10</span>
                 </div>
             </div>
             <div className="p-4">
                 <div className="flex items-center">
                     <img
-                        src="https://upload.wikimedia.org/wikipedia/en/6/69/IIT_Madras_Logo.svg"
+                        src="/logo2.png"
                         alt="College Logo"
                         className="w-10 h-10 rounded-full mr-2"
                     />
@@ -44,7 +44,7 @@ const CollegeCard = () => {
                 <p className="text-gray-700 text-sm sm:text-base">Ranked 227 out of 1400 QS</p>
                 <div className="mt-2">
                     <button
-                        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded-full w-full"
+                        className="bg-green-400 hover:bg-green-500 text-white font-bold py-1 px-2 rounded-full w-full"
                         onClick={() => {
                             // Handle button click
                         }}
@@ -52,7 +52,7 @@ const CollegeCard = () => {
                         View All Courses and Fees
                     </button>
                     <button
-                        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded-full w-full mt-2"
+                        className="bg-green-400 hover:bg-green-500 text-white font-bold py-1 px-4 rounded-full w-full mt-2"
                         onClick={() => {
                             // Handle button click
                         }}

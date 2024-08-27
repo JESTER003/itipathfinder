@@ -27,7 +27,7 @@ const Homepage = () => {
     return (
         <main className=''>
             {/* ------------------------------------------------------------Section-1------------------------------------ */}
-            {/* <p className='text-center'>Hello</p> */}
+
             <section className="min-h-[80vh] bg-cover bg-center w-full" style={{
                 backgroundImage: `url('/bg.jpg')`,
             }}>
@@ -48,7 +48,7 @@ const Homepage = () => {
                         <span className='border-2 border-[#3becb9] rounded-xl px-2 mx-2 basic-regular leading-[27px] inline-block lg:leading-[60px]'>
                             Discover the path to your future
                         </span>
-                        and build a successful trade career.<br/>
+                        and build a successful trade career.<br />
                         <Link to="/qone" className="inline-block text-lg md:text-xl lg:text-2xl px-4 py-2 leading-none rounded-full border-2 border-[#3becb9] text-gray-800 font-medium hover:bg-[#3becb9] hover:text-white transition duration-300 shadow-md hover:shadow-lg ">Get started</Link>
                     </h1>
                 </div>
@@ -82,21 +82,21 @@ const Homepage = () => {
                         <div className="flex flex-col sm:flex-row lg:gap-4 ">
                             <Card2
                                 title="Ranking"
-                                tagline="Collage Ranked based on data"
-                                bname="Top Ranked Collges in india"
+                                tagline="Colleges Ranked based on data"
+                                bname="Top Ranked Colleges in india"
                                 img="https://cdni.iconscout.com/illustration/premium/thumb/website-ranking-3465545-2928735.png?f=webp"
                             />
                             <Card2
                                 title="Find colleges"
                                 tagline="Discover colleges via preference"
-                                bname="Top Ranked Collges in india"
+                                bname="Find Colleges in india"
                                 img="/colleges.png"
                             />
                             <Card2
-                                title="Find colleges"
-                                tagline="Discover colleges via preference"
-                                bname="Top Ranked Collges in india"
-                                img="/colleges.png"
+                                title="Compare colleges"
+                                tagline="See the difference between colleges"
+                                bname="Make Comparison Now"
+                                img="/compare.png"
                             />
                         </div>
                         <div className="flex flex-col sm:flex-row gap-4">
@@ -113,10 +113,10 @@ const Homepage = () => {
                                 img="/courses.png"
                             />
                             <Card2
-                                title="Course Finder"
-                                tagline="Discover top courses among india"
-                                bname="Get Top Courses in india"
-                                img="/courses.png"
+                                title="College Predictor"
+                                tagline="Make sure that which college suits you"
+                                bname="Make Right prediction now"
+                                img="/find.png"
                             />
                         </div>
                     </div>
@@ -128,7 +128,6 @@ const Homepage = () => {
             {/*----------------------------------------------- Section-3 ( Select Study goal ) ------------------------------------- */}
 
             <section className='min-h-[80vh] w-full bg-[#ffffff] p-4'>
-
                 <div className="w-[90%] lg:w-[80%] m-auto mt-3">
                     <div className="text-start ml-3">
                         <h2 className='basic-regular text-[25px] sm:text-[35px] lg:text-[40px]'>
@@ -141,49 +140,49 @@ const Homepage = () => {
                     <div className="p-2 flex flex-col gap-4">
                         <div className="flex flex-wrap justify-center items-center gap-4">
                             <Card1
-                                img="/engineering.jpg"
-                                title="engineering"
+                                img="https://img.freepik.com/free-photo/man-florist-working-green-house_1303-29960.jpg?t=st=1724763340~exp=1724766940~hmac=06a3989d5f517745cd08610f169c7b70fa12b9afcdd11f734ccd4aacefd3cb3f&w=996"
+                                title="ITI in Electrician"
                                 cn={500}
-                                cources1="BE/B.Tech"
-                                cources2="Diploma in engineering"
-                                cources3="ME/M.tech"
+                                cources1="Industrial Training Institute"
                                 borderColor="#cc6b56"
                             />
                             <Card1
-                                img="/engineering.jpg"
-                                title="management"
+                                img="https://img.freepik.com/free-photo/female-auto-repairer-working-shop-car_23-2150170002.jpg?t=st=1724763418~exp=1724767018~hmac=18162bb1226a20ca7eefa929a5fb6c78d5dacee56a70e721934c369c2fea07a5&w=996"
+                                title="ITI in Mechanic "
                                 cn={150}
-                                cources1="MBA"
-                                cources2="BBA"
-                                cources3="Exclusive MBA"
+                                cources1="Industrial Training Institute"
+                                // cources2="BBA"
+                                // cources3="Exclusive MBA"
                                 borderColor="[#0d3063]"
                             />
                             <Card1
-                                img="/engineering.jpg"
-                                title="commerce" cn={800}
-                                cources1="BE/B.Tech"
-                                cources2="Diploma in engineering"
-                                cources3="ME/M.tech"
+                                img="https://img.freepik.com/free-photo/park-lujiazui-financial-centre_1127-3343.jpg?t=st=1724763407~exp=1724767007~hmac=a410a3b02dde0a2af87c81e8ddcd6a4a48477e512f0f71832d7376d53cab2fa7&w=996"
+                                title="ITI in Civil"
+                                cn={800}
+                                cources1="Industrial Training Institute"
+                                // cources2="Diploma in engineering"
+                                // cources3="ME/M.tech"
                                 borderColor="[#1b4942]"
                             />
                         </div>
                         <div className="flex flex-wrap justify-center items-center gap-4">
 
                             <Card1
-                                img="/engineering.jpg"
-                                title="arts" cn={400}
-                                cources1="BE/B.Tech"
-                                cources2="Diploma in engineering"
-                                cources3="ME/M.tech"
+                                img="https://img.freepik.com/free-photo/man-with-mask-welding-metal-atelier_23-2149025925.jpg?t=st=1724763790~exp=1724767390~hmac=a4df900aeeb76b32ae8ba89f191729894b21a03711ebc098e3fa8315071f6893&w=900"
+                                title="ITI in WELDING  "
+                                cn={400}
+                                cources1="Industrial Training Institute"
+                                // cources2="Diploma in engineering"
+                                // cources3="ME/M.tech"
                                 borderColor="[#3becb9]"
                             />
                             <Card1
-                                img="/engineering.jpg"
-                                title="medical"
-                                cn={1100}
-                                cources1="BE/B.Tech"
-                                cources2="Diploma in engineering"
-                                cources3="ME/M.tech"
+                                img="https://img.freepik.com/free-photo/composition-fathers-day-with-tools_23-2147790959.jpg?t=st=1724763841~exp=1724767441~hmac=715d70ba24ee556b62307e503a84fcf1d16762abc9a97d265d2f68787be678e6&w=996"
+                                title="ITI in Tool and Die Maker"
+                                cn={100}
+                                cources1="Industrial Training Institute"
+                                // cources2="Diploma in engineering"
+                                // cources3="ME/M.tech"
                                 borderColor="[#ffaf8d]"
                             />
                         </div>
@@ -197,32 +196,7 @@ const Homepage = () => {
             <section className='min-h-[50vh] w-full bg-[#ffffff] p-4 mt-5'>
                 <div className="w-[80%] m-auto mt-3">
                     <h2 className='basic-regular text-[25px] sm:text-[35px] lg:text-[40px]'>Latest Notifications</h2>
-                    <div className="flex flex-wrap justify-center">
-                        <NotificationCard
-                            title="Notification 1"
-                            data="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                        />
-                        <NotificationCard
-                            title="Notification 2"
-                            data="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                        />
-                        <NotificationCard
-                            title="Notification 3"
-                            data="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                        />
-                        <NotificationCard
-                            title="Notification 4"
-                            data="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                        />
-                        <NotificationCard
-                            title="Notification 5"
-                            data="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                        />
-                        <NotificationCard
-                            title="Notification 6"
-                            data="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                        />
-                    </div>
+                    <NotificationCard />
                 </div>
             </section>
 
