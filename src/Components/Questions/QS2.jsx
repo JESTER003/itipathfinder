@@ -8,7 +8,7 @@ const QS2 = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (interest !== "") {
-      navigate("/qthree");
+      navigate("/cities");
     }
     else {
       alert("Please select an ITI branch before proceeding.");
@@ -41,7 +41,7 @@ const QS2 = () => {
             <div className="mt-4 flex justify-end">
               <button
                 onClick={handleSubmit}
-                to="/qthree"
+                to="/cities"
                 className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-6 rounded">
                 Next</button>
 

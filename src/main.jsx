@@ -14,6 +14,7 @@ import Signup from './Components/Signup';
 import QS1 from './Components/Questions/QS1';
 import QS2 from './Components/Questions/QS2';
 import QS3 from './Components/Questions/QS3';
+import CollegeCard from './Components/Questions/CollegeCities/CollegeCard';
 
 // Define your routes
 const router = createBrowserRouter([
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
       {
         path: "/qthree",
         element: <QS3/>,
+      },
+      {
+        path: "/cities",
+        element: <CollegeCard/>,
       },
     ],
   },

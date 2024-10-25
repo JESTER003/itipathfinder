@@ -32,12 +32,12 @@ const NotificationCard = (props) => {
     return (
         <div className="flex flex-wrap justify-center">
             {news.map((value, index) => (
-                <div className="w-full md:w-1/2 lg:w-1/4 xl:w-1/4 p-4" key={index}>
-                    <div className="bg-white shadow-lg rounded-xl p-6 h-full transition-transform transform hover:scale-105 hover:shadow-xl">
-                        <h3 className="text-xl font-bold text-gray-800 mb-3 uppercase basic-regular ">
+                <div className="w-full md:w-1/2 lg:w-1/4 xl:w-1/4 p-3" key={index} >
+                    <div className="bg-green-100 shadow-lg rounded-xl p-4 h-full transition-transform transform hover:scale-105 hover:shadow-xl ">
+                        <h3 className="lg:text-xl text-gray-900 mb-3 uppercase basic-regular leading-5">
                             {value.title}
                         </h3>
-                        <p className="text-gray-600 leading-relaxed basic-regular">
+                        <p className="text-gray-600 leading-5 lg:leading-relaxed basic-regular lg:text-sm">
                             {value.desc}
                         </p>
                     </div>

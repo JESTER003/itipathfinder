@@ -2,7 +2,7 @@ import React from 'react'
 
 const Card1 = (props) => {
     return (
-        <div className="bg-white border-t-[12px] border-[${props.borderColor}] w-fit shadow-xl rounded-xl ">
+        <div className="bg-white border-t-[12px] shadow-xl rounded-xl ">
             <div className="border-t-[2px] border-white">
                 <img src={props.img} alt="" width={300} height={200} />
             </div>

@@ -37,10 +37,10 @@ const QS3 = () => {
             <div className="mt-4 flex justify-start">
               <button
                 onClick={handleSubmit}
+                to="/cities"
                 className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-6 rounded">
                 Next
               </button>
-
               <Link to="/qtwo" className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-6 rounded ml-5">
                 Previous
               </Link>

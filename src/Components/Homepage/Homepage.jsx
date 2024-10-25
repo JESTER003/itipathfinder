@@ -28,15 +28,13 @@ const Homepage = () => {
         <main className=''>
             {/* ------------------------------------------------------------Section-1------------------------------------ */}
 
-            <section className="min-h-[80vh] bg-cover bg-center w-full" style={{
-                backgroundImage: `url('/bg.jpg')`,
-            }}>
-                <div className="absolute w-full overflow-hidden ">
+            <section className="min-h-[80vh] bg-cover bg-center w-full">
+
+                {/* <div className="absolute w-full overflow-hidden ">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                         <path d="M3000 120L0 16.48 0 0 1200 0 1200 120z" fill='#3becb9'></path>
                     </svg>
-
-                </div>
+                </div> */}
 
                 <div className="w-full min-h-[85vh] flex justify-center items-center">
                     <h1 className='source-serif-4 text-[24px] sm:text-[32px] lg:text-[40px] xl:text-[48px] text-center w-[90%] lg:w-[80%] mx-auto lg:leading-[65px]'>
@@ -53,16 +51,16 @@ const Homepage = () => {
                     </h1>
                 </div>
 
-                <div className="absolute w-full bottom-0 rotate-180">
+                {/* <div className="absolute w-full bottom-0 rotate-180">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                         <path d="M3000 120L0 16.48 0 0 1200 0 1200 120z" fill='#3becb9'></path>
                     </svg>
-                </div>
+                </div> */}
             </section>
 
             {/* ------------------------------------------------ Section-2 (Explore all programs )----------------------------------- */}
 
-            <section className="min-h-[80vh] w-full bg-[#ffffff] py-6 mt-0">
+            <section className="min-h-[80vh] w-full bg-[#ffffff] py-6 mt-0 px-3">
                 <div className="w-full lg:w-[80%] mx-auto mt-14">
                     <h2 className="basic-regular text-[25px] sm:text-[35px] lg:text-[40px]">
                         Explore All Programs
@@ -138,7 +136,7 @@ const Homepage = () => {
                         </p>
                     </div>
                     <div className="p-2 flex flex-col gap-4">
-                        <div className="flex flex-wrap justify-center items-center gap-4">
+                        <div className="flex  overflow-scroll justify-center items-center gap-4">
                             <Card1
                                 img="https://img.freepik.com/free-photo/man-florist-working-green-house_1303-29960.jpg?t=st=1724763340~exp=1724766940~hmac=06a3989d5f517745cd08610f169c7b70fa12b9afcdd11f734ccd4aacefd3cb3f&w=996"
                                 title="ITI in Electrician"
@@ -165,8 +163,7 @@ const Homepage = () => {
                                 borderColor="[#1b4942]"
                             />
                         </div>
-                        <div className="flex flex-wrap justify-center items-center gap-4">
-
+                        <div className="flex overflow-hidden justify-center items-center gap-4">
                             <Card1
                                 img="https://img.freepik.com/free-photo/man-with-mask-welding-metal-atelier_23-2149025925.jpg?t=st=1724763790~exp=1724767390~hmac=a4df900aeeb76b32ae8ba89f191729894b21a03711ebc098e3fa8315071f6893&w=900"
                                 title="ITI in WELDING  "
@@ -193,8 +190,8 @@ const Homepage = () => {
 
             {/* -------------------------------------------- SECTION - 4 ( Latest Notifiction)  -------------------------------------- */}
 
-            <section className='min-h-[50vh] w-full bg-[#ffffff] p-4 mt-5'>
-                <div className="w-[80%] m-auto mt-3">
+            <section className=' min-h-[50vh] w-full bg-[#ffffff] lg:p-4 mt-5'>
+                <div className=" w-[90%] m-auto mt-3">
                     <h2 className='basic-regular text-[25px] sm:text-[35px] lg:text-[40px]'>Latest Notifications</h2>
                     <NotificationCard />
                 </div>
@@ -202,7 +199,7 @@ const Homepage = () => {
 
             {/* ---------------------------------------- ----SECTION-5 (Top college Tables ) --------------------------------------- */}
 
-            <section className='min-h-[80vh] w-full bg-[#ffffff] p-4 mt-5'>
+            <section className='min-h-[80vh] w-fit bg-[#ffffff] p-4 mt-5'>
                 <div className="w-[80%] m-auto mt-3">
                     <h2 className='basic-regular text-[25px] sm:text-[35px] lg:text-[40px]'>Top 10 colleges</h2>
                     <div className="flex flex-wrap gap-3 mt-3">
