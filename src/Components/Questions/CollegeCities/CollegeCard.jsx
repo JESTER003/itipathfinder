@@ -2,80 +2,95 @@ import React from 'react';
 import { useState } from 'react';
 const CollegeCard = () => {
     const abdclg = [
-         {
-             name:"ITI KUBERNAGR",
-             clgimg:"https://images.jdmagicbox.com/comp/ahmedabad/75/079p252775/catalogue/industrial-training-institute-kubernagar-ahmedabad-institutes-for-iti-cp8ho0.jpg",
-             clglogo:"https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"
+        {
+            name: "ITI KUBERNAGR",
+            clgimg: "https://images.jdmagicbox.com/comp/ahmedabad/75/079p252775/catalogue/industrial-training-institute-kubernagar-ahmedabad-institutes-for-iti-cp8ho0.jpg",
+            clglogo: "https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"
         },
         {
-            name:"ITI Sarkhej",
-            clgimg:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGAX1Q7Jv2sYCebMIQqwYetgn498k4fY1AZQ&s",
-            clglogo:"https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"
+            name: "ITI Sarkhej",
+            clgimg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGAX1Q7Jv2sYCebMIQqwYetgn498k4fY1AZQ&s",
+            clglogo: "https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"
         },
         {
-            name:"ITI Sanand",
-            clgimg:"https://lh3.googleusercontent.com/p/AF1QipPYVjxpFnsTiIPItlyyvozgB6NtXOpqDpV76y2L=s1360-w1360-h1020",
-            clglogo:"https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"
+            name: "ITI Sanand",
+            clgimg: "https://lh3.googleusercontent.com/p/AF1QipPYVjxpFnsTiIPItlyyvozgB6NtXOpqDpV76y2L=s1360-w1360-h1020",
+            clglogo: "https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"
         }
     ]
     const brdclg = [
         {
             name: "ITI Gorwa",
             clgimg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSIgFL7vtpeloKhllVuP-DPycpM_QkmHVALg&s",
-            clglogo:"https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"
+            clglogo: "https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"
         },
         {
             name: "ITI tarsali",
             clgimg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOsznpwR9TD_sPPvQ1T8SysiKcfN__NwNAzw&s",
-            clglogo:"https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"
+            clglogo: "https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"
         },
         {
             name: "ITI dashrath",
             clgimg: "https://itidashrath.gujarat.gov.in/Content/itidashrath.gujarat.gov.in/Gallery/Crop/574ITI%20WORKSHOP%20.jpg",
-            clglogo:"https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"
+            clglogo: "https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"
         }
     ];
     const srtclg = [
         {
             name: "ITI Bilimora",
             clgimg: "https://content.jdmagicbox.com/comp/navsari/l1/9999p2637.2637.180630155517.x9l1/catalogue/bilimora-iti-bilimora-navsari-lmud35nblv.jpg?clr=",
-            clglogo:"https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"
+            clglogo: "https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"
         },
         {
             name: "ITI Karchelia",
             clgimg: "https://content.jdmagicbox.com/v2/comp/surat/e2/0261px261.x261.180814164101.m2e2/catalogue/new-iti-karchelia-karchelia-surat-technical-institutes-plHjR7DZbI.jpg",
-            clglogo:"https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"        },
+            clglogo: "https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"
+        },
         {
             name: "ITI Majuragate",
             clgimg: "https://slideplayer.com/slide/1459861/4/images/25/Industrial+Training+Institute%2C+Surat.jpg",
-            clglogo:"https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"        }
+            clglogo: "https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"
+        }
     ];
     const rjclg = [
         {
-            name: "Government Eng. Rajkot",
-            clgimg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTx7o8mB-vJkNXAKGlPkB8HzdDlWthxjXejA&s",
+            name: "ITI Rajkot",
+            clgimg: "https://content.jdmagicbox.com/comp/rajkot/y3/0281px281.x281.120521121612.b2y3/catalogue/industrial-training-institute-bhavnagar-road-rajkot-institutes-for-iti-5bohal712c.jpg?clr=",
+            clglogo: "https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"
+
         },
         {
-            name: "Marwadi University",
-            clgimg: "https://i.ytimg.com/vi/9qhF1he3xyo/maxresdefault.jpg",
+            name: "ITI Gondal",
+            // clgimg: "https://i.ytimg.com/vi/9qhF1he3xyo/maxresdefault.jpg",
+            clglogo: "https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"
+
+
         },
         {
-            name: "ATMIYA University",
-            clgimg: "https://threebestrated.in/images/AtmiyaUniversity-Rajkot-GJ.jpeg",
+            name: "ITI jasdan",
+            clgimg: "https://content.jdmagicbox.com/comp/botad/u6/0278px278.x278.180814101351.n2u6/catalogue/iti-botad-dhankaniya-botad-colleges-qtqazkx2w7.jpg",
+            clglogo: "https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"
+
         }
     ];
     const bvnclg = [
         {
-            name: "Government Medical Bhavanagr",
-            clgimg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGsClSFwqLt2bbkRwOfctFiYx40begfMCoPQ&s",
+            name: "ITI Bhavnagr",
+            clgimg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk8_1yDl-YG47JKueJeZ9MH51A2RG6COsa8g&s",
+            clglogo: "https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"
+
         },
         {
-            name: "MKBU College",
-            clgimg: "https://gcas.gujgov.edu.in/Documents/UniBanner_20231206155527930.jpg",
+            name: "ITI Palitana",
+            clgimg: "https://content.jdmagicbox.com/comp/amreli/p3/9999p2792.2792.111019163405.g5p3/catalogue/industrial-training-institute-station-road-amreli-amreli-computer-training-institutes-qr9ee7dbl7.jpg",
+            clglogo: "https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"
+
         },
         {
-            name: "SVCCS Bhavnagar",
-            clgimg: "https://image-static.collegedunia.com/public/college_data/images/appImage/24044_GLSICT.jpg?h=111.44&w=263&mode=stretch",
+            name: "ITI Gogha",
+            clgimg: "https://content.jdmagicbox.com/v2/comp/bhavnagar/l6/0278px278.x278.171001172150.y9l6/catalogue/industrial-training-institute-gogha-bhavnagar-iti-institutes-UilDDsEVxB.jpg",
+            clglogo: "https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"
+
         }
     ];
 
@@ -89,7 +104,7 @@ const CollegeCard = () => {
                 {/* ------------------ All cities name -----------------------*/}
                 <div className="w-full h-fit flex flex-col items-center justify-center">
                     <h2 className="basic-regular text-[25px] sm:text-[35px] lg:text-[40px]">
-                        Select Your Cities 
+                        Select Your Cities
                     </h2>
                     <div className="flex flex-wrap gap-3 mt-3">
                         {/* {courses.map((course, index) => (
