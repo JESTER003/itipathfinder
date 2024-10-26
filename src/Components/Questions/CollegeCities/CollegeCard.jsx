@@ -3,54 +3,52 @@ import { useState } from 'react';
 const CollegeCard = () => {
     const abdclg = [
          {
-             name:"Nirma University",
-             clgimg:"https://media.licdn.com/dms/image/v2/C4D1BAQGiTxDFnjX7KQ/company-background_1536_768/company-background_1536_768/0/1583301340061?e=2147483647&v=beta&t=O9KJRThSdSvwa0FFwgcohgJpWAmt6EVhNSc4heGyXgU",
-             clglogo:"https://upload.wikimedia.org/wikipedia/en/8/83/Nirma_University_Logo.png"
+             name:"ITI KUBERNAGR",
+             clgimg:"https://images.jdmagicbox.com/comp/ahmedabad/75/079p252775/catalogue/industrial-training-institute-kubernagar-ahmedabad-institutes-for-iti-cp8ho0.jpg",
+             clglogo:"https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"
         },
         {
-            name:"LD Engineering",
-            clgimg:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtp01uRZ3iGe1gaf1S2Ug8BiOSuCEgxbpyuA&s",
-            clglogo:"https://media.licdn.com/dms/image/v2/C4D0BAQHfvameHidqKg/company-logo_200_200/company-logo_200_200/0/1631351078340?e=2147483647&v=beta&t=GnToL1Ihl8OjonG6YkVTQq9QfDtCuD1Iz65NNIasXKo"
+            name:"ITI Sarkhej",
+            clgimg:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGAX1Q7Jv2sYCebMIQqwYetgn498k4fY1AZQ&s",
+            clglogo:"https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"
         },
         {
-            name:"Adani Engineering",
-            clgimg:"https://www.adaniuni.ac.in/wp-content/uploads/2024/02/Dignitaries-with-the-convocating-batch-of-PGDM-2021-23.jpg",
-            clglogo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpe3NrwUulxyOVy7kABHoLGAUrOQyYXJCajQ&s"
+            name:"ITI Sanand",
+            clgimg:"https://lh3.googleusercontent.com/p/AF1QipPYVjxpFnsTiIPItlyyvozgB6NtXOpqDpV76y2L=s1360-w1360-h1020",
+            clglogo:"https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"
         }
     ]
     const brdclg = [
         {
-            name: "Parul University",
-            clgimg: "https://image-static.collegedunia.com/public/college_data/images/appImage/1599193361PuCampus.jpg?h=260&w=360&mode=crop",
-            clglogo:"https://logowik.com/content/uploads/images/t_parul-university3698.jpg"
+            name: "ITI Gorwa",
+            clgimg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSIgFL7vtpeloKhllVuP-DPycpM_QkmHVALg&s",
+            clglogo:"https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"
         },
         {
-            name: "Maharaj Sayajirao uni",
-            clgimg: "https://i0.wp.com/historyofvadodara.in/wp-content/uploads/MSU.jpg?resize=1060%2C600&ssl=1",
-            clglogo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTffmrxHvi5zvB4mTBgAQblFh1NYGYT7mLYtg&s"
+            name: "ITI tarsali",
+            clgimg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOsznpwR9TD_sPPvQ1T8SysiKcfN__NwNAzw&s",
+            clglogo:"https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"
         },
         {
-            name: "Navrachna University",
-            clgimg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ7HuISRs4EFmsy5Evf-app0WEs0TNAMpzNw&s",
-            clglogo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFtbi-iMZH_CKCnpyJIa0f8BV7F4YAK5kHAA&s"
+            name: "ITI dashrath",
+            clgimg: "https://itidashrath.gujarat.gov.in/Content/itidashrath.gujarat.gov.in/Gallery/Crop/574ITI%20WORKSHOP%20.jpg",
+            clglogo:"https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"
         }
     ];
     const srtclg = [
         {
-            name: "SVNIT Surat",
-            clgimg: "https://lh6.googleusercontent.com/proxy/TH3oS8jj40znwwWFacQUemcyDdrUUlbLgZQsNurJwJONwwP0hXEUjZWGhmE7mXZt14QDW3tx29Vin1z7",
-            clglogo:"https://i.pinimg.com/564x/91/64/1e/91641e3b456269b48869a7e5af978c61.jpg"
+            name: "ITI Bilimora",
+            clgimg: "https://content.jdmagicbox.com/comp/navsari/l1/9999p2637.2637.180630155517.x9l1/catalogue/bilimora-iti-bilimora-navsari-lmud35nblv.jpg?clr=",
+            clglogo:"https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"
         },
         {
-            name: "IIIT SURAT",
-            clgimg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSMc4-VLs142DSK8BwaGZE9KGm6OniPd67HA&s",
-            clglogo:""
-        },
+            name: "ITI Karchelia",
+            clgimg: "https://content.jdmagicbox.com/v2/comp/surat/e2/0261px261.x261.180814164101.m2e2/catalogue/new-iti-karchelia-karchelia-surat-technical-institutes-plHjR7DZbI.jpg",
+            clglogo:"https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"        },
         {
-            name: "SIT",
-            clgimg: "https://i.ytimg.com/vi/lcu_aH9stFI/maxresdefault.jpg",
-            clglogo:""
-        }
+            name: "ITI Majuragate",
+            clgimg: "https://slideplayer.com/slide/1459861/4/images/25/Industrial+Training+Institute%2C+Surat.jpg",
+            clglogo:"https://ganeshiti.in/wp-content/uploads/2022/02/logo.png"        }
     ];
     const rjclg = [
         {
@@ -126,7 +124,7 @@ const CollegeCard = () => {
                 </div>
                 {/* --------------------------------------abd colleges----------------------- */}
                 {selectedCity === "Ahmedabad" &&
-                    <div className='flex mt-5 gap-5 w-full justify-center items-center flex-wrap flex-wrap'>
+                    <div className='flex mt-5 gap-5 w-full justify-center items-center flex-wrap '>
                         {abdclg.map((value, index) => (
                             <div className="bg-white rounded-lg shadow-md overflow-hidden w-full sm:w-[50vw] md:w-[40vw] lg:w-[30vw] xl:w-[25vw] min-h-fit" key={index}>
                                 <div className="relative">
